@@ -63,7 +63,7 @@ public class JanusGraphSchemaVertex extends CacheVertex implements SchemaSource 
         if (name !=null ) {
             return JanusGraphSchemaCategory.getName(name);
         } else {
-            return "";
+            return "missing";
         }
                 
     }
