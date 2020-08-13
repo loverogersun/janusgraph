@@ -4,10 +4,11 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ fix-type-not-found ]
-  pull_request:
-    branches: [ fix-type-not-found ]
+  workflow_dispatch:
+#   push:
+#     branches: [ fix-type-not-found ]
+#   pull_request:
+#     branches: [ fix-type-not-found ]
 
 jobs:
   build:
