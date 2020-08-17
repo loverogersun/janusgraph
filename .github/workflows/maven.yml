@@ -6,7 +6,7 @@ name: Build fix-type-not-found with Maven
 on:
 #   workflow_dispatch:
   push:
-#     branches: [ fix-type-not-found ]
+    branches: [ fix-type-not-found ]
   pull_request:
     branches: [ fix-type-not-found ]
 
@@ -22,7 +22,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file janusgraph-core/pom.xml
     - run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v2
       with:
