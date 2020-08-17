@@ -1,14 +1,14 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Build fix-type-not-found with Maven
+name: Build janusgraph-core with Maven
 
 on:
-#   workflow_dispatch:
-  push:
-    branches: [ fix-type-not-found ]
-  pull_request:
-    branches: [ fix-type-not-found ]
+  workflow_dispatch:
+#   push:
+#     branches: [ fix-type-not-found ]
+#   pull_request:
+#     branches: [ fix-type-not-found ]
 
 jobs:
   build:
